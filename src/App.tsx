@@ -1,10 +1,11 @@
 // App.tsx
 import React from 'react';
-import { Link, Route, BrowserRouter, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ReactPopupExam from './ReactPopupExam';
 import ReactReduxThunkStudy from './ReactReduxThunkStudy';
-import { UseEffectTestor } from './UseEffectTestor';
-import { SubRoute } from './SubRoute';
 import { RootMenu } from './RootMenu';
+import { SubRoute } from './SubRoute';
+import { UseEffectTestor } from './UseEffectTestor';
 
 
 const App: React.FC = () => {
@@ -14,6 +15,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<RootMenu />} />
           <Route path="/reduxthunk" element={<ReactReduxThunkStudy />} />
+          <Route path="/popuptest" element={<ReactPopupExam />} />
           <Route path="/useeffect" element={<UseEffectTestor />} />
           <Route path="/subroute/*" element={<SubRoute />} />
           <Route path="/subroute/useeffect" element={<UseEffectTestor />} />

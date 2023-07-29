@@ -12,6 +12,9 @@ export const RootMenu = () => {
                     <li>
                         <Link to="/useeffect">useeffect</Link>
                     </li>
+                    <li>
+                        <Link to="/popuptest">popuptest</Link>
+                    </li>
                 </ul>
             </nav>
             <Outlet />
