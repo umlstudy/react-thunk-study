@@ -6,6 +6,7 @@ import ReactReduxThunkStudy from './ReactReduxThunkStudy';
 import { RootMenu } from './RootMenu';
 import { SubRoute } from './SubRoute';
 import { UseEffectTestor } from './UseEffectTestor';
+import ReactToastExam from './ReactToastExam';
 
 
 const App: React.FC = () => {
@@ -17,6 +18,7 @@ const App: React.FC = () => {
           <Route path="/reduxthunk" element={<ReactReduxThunkStudy />} />
           <Route path="/popuptest" element={<ReactPopupExam />} />
           <Route path="/useeffect" element={<UseEffectTestor />} />
+          <Route path="/toasttest" element={<ReactToastExam />} />
           <Route path="/subroute/*" element={<SubRoute />} />
           <Route path="/subroute/useeffect" element={<UseEffectTestor />} />
         </Routes>

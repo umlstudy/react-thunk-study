@@ -15,6 +15,9 @@ export const RootMenu = () => {
                     <li>
                         <Link to="/popuptest">popuptest</Link>
                     </li>
+                    <li>
+                        <Link to="/toasttest">toasttest</Link>
+                    </li>
                 </ul>
             </nav>
             <Outlet />
